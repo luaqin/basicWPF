@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock/>
+        <StackPanel>
+            <TextBox Margin="5" x:Name="textBoxName" BorderBrush="Black"/>
+            <Button Content="AddAge" Margin="5" Click="Button_Click"/>
+            <TextBox Margin="5" x:Name="textBox1" Text="{Binding Path=Value,ElementName=slider1}" BorderBrush="Black"/>
+            <Slider x:Name="slider1" Maximum="100" Minimum="0" Margin="5"/>
+            <TextBox x:Name="textBox2" Margin="5" BorderBrush="Black"/>
+            <TextBox x:Name="textBox3" Margin="5" BorderBrush="Black"/>
+            <TextBox x:Name="textBox4" Margin="5" BorderBrush="Black"/>
+        </StackPanel>
     </Grid>
 </Window>
