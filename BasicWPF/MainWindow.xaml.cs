@@ -38,7 +38,7 @@ namespace BasicWPF
             BindingOperations.SetBinding(this.textBoxName, TextBox.TextProperty, binding);
 
             List<string> stringList = new List<string> { "Tim", "Tom", "Blog" };
-          
+            //添加更改
 
             //binding
             City city = new City { Name = "成都" };
