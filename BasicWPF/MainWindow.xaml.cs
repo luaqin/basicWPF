@@ -48,9 +48,7 @@ namespace BasicWPF
             Country country = new Country { Name = "中国", ProvinceList = new List<Province> { province } };
             List<Country> countryList = new List<Country>() { country };
 
-            textBox2.SetBinding(TextBox.TextProperty, new Binding("/Name") { Source = countryList });
-            textBox3.SetBinding(TextBox.TextProperty, new Binding("/ProvinceList/Name") { Source = countryList });
-            textBox4.SetBinding(TextBox.TextProperty, new Binding("/ProvinceList/CityList/Name") { Source = countryList });
+
             
 
 
