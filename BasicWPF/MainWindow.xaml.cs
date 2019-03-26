@@ -38,9 +38,7 @@ namespace BasicWPF
             BindingOperations.SetBinding(this.textBoxName, TextBox.TextProperty, binding);
 
             List<string> stringList = new List<string> { "Tim", "Tom", "Blog" };
-            //this.textBox2.SetBinding(TextBox.TextProperty, new Binding("/") { Source = stringList });
-            //this.textBox3.SetBinding(TextBox.TextProperty, new Binding("/Length") { Source = stringList,Mode=BindingMode.OneWay });
-            //this.textBox4.SetBinding(TextBox.TextProperty, new Binding("/[2]") { Source = stringList, Mode = BindingMode.OneWay });
+          
 
             //binding
             City city = new City { Name = "成都" };
